@@ -1,0 +1,15 @@
+{
+  "name": "Layerer",
+  "description": "Add image as layer on webpage",
+  "version": "1.0",
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "browser_action": {
+      "default_title": "Layerer",
+      "default_icon": "icon.png",
+      "default_popup": "layerer.html"
+  },
+  "manifest_version": 2,
+  "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'"
+}

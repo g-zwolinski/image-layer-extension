@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Layerer</title>
+    <style>
+      body{
+        min-width: 206px; 
+      }
+      .controls{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 100%;
+      }
+      .controls input{
+        width: calc(25% - 12px);
+        border: 1px solid #ddd;
+        outline: none;
+        padding: 5px 5px;
+      }
+      .controls input[type="checkbox"]{
+        margin-right: 8px;
+      }
+      .controls button{
+        background: #fff;
+        width: 25%;
+        border: 1px solid #ddd;
+        outline: none;
+        padding: 5px 5px;
+      }
+      .main-btn{
+        padding: 5px 5px;
+        background: #fff;
+        width: 25%;
+        border: 1px solid #ddd;
+        outline: none;
+        font-family: sans-serif;
+      }
+      #controls-contener{
+        font-family: sans-serif;
+      }
+    </style>
+    <script src="jquery.js"></script>
+    <script src="layerer.js"></script>
+  </head>
+  <body>
+    <span id="add" class="main-btn">ADD</span>
+    <span> | </span>
+    <span id="save" class="main-btn">SAVE</span>
+    <span> | </span>
+    <span id="load" class="main-btn">LOAD</span>
+    <span> | </span>
+    <span id="clear" class="main-btn">CLEAR</span>
+    <div id="controls-contener"></div>
+  </body>
+</html>
